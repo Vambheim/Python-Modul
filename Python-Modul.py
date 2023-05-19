@@ -12,9 +12,6 @@ import json
 
 df = pd.read_csv("DATAGRUNNLAG",  index_col = "Unnamed: 0")
                 
-# df['ABG Sundal'] = df['ABG Sundal'].str.replace('−', '-')
-# df['ABG Sundal'] = df['ABG Sundal'].astype(float)
-
 #Fjerner tomrom i skjema.
 df = df.dropna(axis = 0, how = "all")
 #Fjerner kolonner med for mange manglende verdier. 
